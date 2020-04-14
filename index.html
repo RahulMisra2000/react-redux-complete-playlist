@@ -32,6 +32,12 @@
             <h1>Hello, ninjas!</h1>
             <p>My name is: { this.state.name } and I am { this.state.age }</p>
             <button onClick={this.handleClick}>Click me</button>
+            
+            {/* 
+              We need to do a bind if inside the handleClick method we want this to refer to the component  
+              <button onClick={this.handleClick.bind(this)}>Click me</button> 
+            */}
+            
             <button onMouseOver={this.handleMouseOver}>Hover me</button>
             <p onCopy={this.handleCopy}>What we think, we become</p>
           </div>
