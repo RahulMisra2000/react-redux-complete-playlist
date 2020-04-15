@@ -35,10 +35,12 @@ class Home extends Component {
   }
 }
 
+/* *************************************** subscribing to the redux store's .posts  ************************************ */
+/* ********* whatever is returned by this function gets added as a property to this component's props object *********** */
 const mapStateToProps = (state) => {
   return {
     posts: state.posts
   }
 }
 
-export default connect(mapStateToProps)(Home)
+export default connect(mapStateToProps)(Home)       // SUBSCRIPTION
