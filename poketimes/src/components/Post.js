@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import { connect } from 'react-redux'     // For connecting to the redux store
 
 class Post extends Component {
   render() {
@@ -21,6 +21,9 @@ class Post extends Component {
   }
 }
 
+/* ****************** state here is the state from the redux store ******************************************** */
+/* ****************** ownProps is the props available inside this component *********************************** */
+/* ** whatever is returned by this function will get added to the props of this component ********************* */
 const mapStateToProps = (state, ownProps) => {
   let id = ownProps.match.params.post_id;
   return {
